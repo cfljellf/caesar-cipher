@@ -3,7 +3,7 @@ const plain = "plain"; // input text
 const alphabets = "abcdefghijklmnopqrstuvwxyz".split("");
 
 alphabets.forEach((_, shift) => {
-  console.log({ shift, cipher: caesarCipher(plain, shift) });
+  console.log({ shift: `${shift}`.padStart(2, "0"), cipher: caesarCipher(plain, shift) });
 });
 
 function caesarCipher(plain, shift) {
