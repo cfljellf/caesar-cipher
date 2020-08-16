@@ -1,9 +1,9 @@
-const plain = ""; // input text
+const plain = "plain"; // input text
 
 const alphabets = "abcdefghijklmnopqrstuvwxyz".split("");
 
 alphabets.forEach((_, shift) => {
-  console.log({ plain, shift, cipher: caesarCipher(plain, shift) });
+  console.log({ shift, cipher: caesarCipher(plain, shift) });
 });
 
 function caesarCipher(plain, shift) {
