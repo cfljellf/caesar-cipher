@@ -11,7 +11,11 @@ const plain = "plain";
 
 ```sh
 node index.js
+```
 
+result
+
+```js
 { shift: 0, cipher: 'plain' }
 { shift: 1, cipher: 'qmbjo' }
 { shift: 2, cipher: 'rnckp' }
